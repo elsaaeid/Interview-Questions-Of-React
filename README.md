@@ -1231,7 +1231,7 @@ componentWillUnmount
 </ul>
 </li>
 </ol>
-<img src="./react-lCP.png" />
+<img src="./lCP.png" />
 
 </li>
 
