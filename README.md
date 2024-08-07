@@ -2,32 +2,34 @@
 
 <ol>
 <li>
-What are the features of React?
+ 
+  What are the features of React?
+ 
 <p>
 The features of React are as follows:
 </p>
 <ul>
 <li>
-<span>
+
 JSX
-</span>
+
 JSX serves as a syntax extension to JavaScript, facilitating the 
 combination of HTML structures with JavaScript code within React 
 files.
 </li>
 <li>
-<span>
+
 Components
-</span>
+
 JSX serves as a syntax extension to JavaScript, facilitating the 
 combination of HTML structures with JavaScript code within 
 React files.
 </li>
 
 <li>
-<span>
+
 Virtual DOM
-</span>
+
 React employs a Virtual DOM, which is a lightweight 
 representation of the actual DOM stored in memory. This 
 approach allows React to selectively update only the relevant 
@@ -35,9 +37,9 @@ parts of the real DOM when the state of an object changes.
 files.
 </li>
 <li>
-<span>
+
 Data Binding
-</span>
+
 React adopts a one-way data-binding approach, ensuring a 
 modular and efficient structure. Unidirectional data flow signifies 
 that in a React app, child components are often nested within 
@@ -45,9 +47,9 @@ parent components.
 </li>
 
 <li>
-<span>
+
 High Performance
-</span>
+
 React's high performance is driven by its ability to update only 
 the components that undergo changes, rather than refreshing the 
 entire set. This results in significantly faster web applications.
@@ -61,7 +63,8 @@ What is difference between
 element and component in React?
 <ul>
 <li>
-<span>Element</span>
+Element
+ 
 An Element is a simple object that describes what you want to show 
 on the screen. It defines the structure of DOM nodes or other 
 components. Elements can include other Elements in their properties. 
@@ -69,12 +72,14 @@ Once created, Elements cannot be changed. Creating a React
 Element is a straightforward and inexpensive operation.
 <ul>
 <li>
-<span>
+
 Example of creating an Element using JSX:
-</span>
-JSX serves as a syntax extension to JavaScript, facilitating the 
+<p>
+ JSX serves as a syntax extension to JavaScript, facilitating the 
 combination of HTML structures with JavaScript code within 
 React files.
+</p>
+
 <pre>
 <code>
 const element = <div id="login-btn">Login</div>;
