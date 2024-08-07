@@ -1156,4 +1156,555 @@ Performance
 </tr>
 </table>
 </li>
+<li>
+What are the different phases of
+
+the component lifecycle?
+<h2>
+Phases of the Component Lifecycle in React
+</h2>
+<h3>
+The lifecycle of a React component is divided into four phases:
+</h3>
+<ol>
+<li>
+
+Initialization
+<p>
+In this phase, the React component gets ready by setting up 
+default props and initializing the state.
+</p>
+</li>
+<li>
+Mounting
+<p>
+Mounting involves putting the elements into the browser DOM. 
+React utilizes VirtualDOM, and during mounting, only the 
+changed elements are updated in the browser DOM. 
+</p>
+This phase includes the following lifecycle methods:
+<ol>
+<li>
+ componentWillMount
+</li>
+<li>
+ componentDidMount
+</li>
+</lo>
+
+</li>
+<li>
+Updating
+<p>
+When there is a change in the state or props of a component, the 
+updating phase is triggered. 
+This phase includes the following 
+lifecycle methods:
+</p>
+<ol>
+<li>
+ componentWillUpdate
+</li>
+<li>
+ shouldComponentUpdate
+</li>
+<li>
+render
+</li>
+<li>
+componentDidUpdate
+</li>
+</ol>
+
+</li>
+<li>
+Unmounting
+<p>
+In the unmounting phase, the component is removed from the 
+DOM or unmounted. 
+This phase includes the following lifecycle method:
+</p>
+<ul>
+<li>
+componentWillUnmount
+</li>
+</ul>
+</li>
+</ol>
+<img src="./react-lCP.png" />
+
+</li>
+
+<li>
+What are the lifecycle methods of
+
+React?
+<p>
+React lifecycle methods are functions automatically called at different 
+phases in a component's lifecycle, offering control over its behavior. 
+Understanding and utilizing these methods empower developers to 
+efficiently manage various aspects throughout the component's 
+existence.
+</p>
+<h3>
+Example Scenario
+</h3>
+<p>
+Consider a YouTube application. When a user switches to another 
+app after playing a video, efficient resource management is 
+crucial. Lifecycle methods help developers ensure optimal 
+utilization of resources like network and battery.
+</p>
+<h3>
+Key Lifecycle Methods
+</h3>
+<ol>
+<li>
+constructor()
+<ul>
+<li>
+Called during component initiation.
+</li>
+<li>
+Sets up initial state and values.
+</li>
+</ul>
+</li>
+<li>
+ getDerivedStateFromProps()
+<ul>
+<li>
+ Called just before rendering elements in the DOM.
+</li>
+<li>
+Sets up the state based on initial props.
+</li>
+<li>
+ First method called on component update.
+</li>
+</ul>
+</li>
+<li>
+render()
+
+<ul>
+<li>
+ Outputs or re-renders HTML to the DOM with new changes.
+</li>
+<li>
+ Essential method called on every render.
+</li>
+</ul>
+</li>
+<li>
+ componentDidMount()
+<ul>
+<li>
+ Called after component rendering.
+</li>
+<li>
+ Executes statements requiring the component to be in the 
+DOM.
+</li>
+</ul>
+</li>
+<li>
+ shouldComponentUpdate()
+<ul>
+<li>
+Returns a Boolean specifying whether React should proceed 
+with rendering.
+</li>
+ <li>
+Default value is . true
+</li>
+</ul>
+</li>
+<li>
+ getSnapshotBeforeUpdate()
+<ul>
+<li>
+Provides access to props and state before the update.
+</li>
+
+<li>
+ Allows checking previous values after the update.
+</li>
+</ul>
+</li>
+<li>
+componentDidUpdate()
+<ul>
+<li>
+ Called after the component is updated in the DOM.
+</li>
+</ul>
+</li>
+<li>
+componentWillUnmount()
+<ul>
+<li>
+Called when the component is about to be removed from the DOM.
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+What is prop drilling?
+<p>
+The lifecycle of a React component is divided into four phases:
+</p>
+<ul>
+<li>
+Example Scenario
+<ul>
+<li>
+Consider a scenario <EditUsersPage /> where maintains selectedUserAddress in its state.
+</li>
+<li>
+<EditUsersPage /> renders <User /> , which, in turn, 
+renders <UserDetails /> .
+</li>
+<li>
+<UserDetails /> contains a <UserAddress />
+component that requires access to selectedUserAddress.
+</ul>
+</li>
+<li>
+Approach
+<ul>
+<li>
+The straightforward solution is to pass
+selectedUserAddress as a prop from <EditUsersPage /> to <User /> then to <UserDetails /> and finally to <UserAddress />.
+</li>
+</ul>
+</li>
+<li>
+Drawback of Prop Drilling
+<ul>
+<li>
+ Components like <User /> and <UserDetails /> become 
+unnecessarily complex and harder to maintain because they 
+are aware of data that is beyond their primary concern.
+</li>
+</ul>
+</li>
+
+<li>
+Avoiding Prop Drilling
+<ol>
+<li>
+Alternative Approach
+<ul>
+<li>Utilize React context to sidestep prop drilling.
+</li>
+</ul>
+</li>
+<li>
+React Context
+<ul>
+<li>
+Define a Provider component to supply data.
+</li>
+<li>
+Nested components can then consume this context data through a Consumer component or the useContext hook.
+</li>
+</ul>
+</li>
+<li>
+Benefits
+<ul>
+<li>
+Context allows for a cleaner separation of concerns, 
+preventing components from being burdened with data they 
+shouldn't necessarily be aware of.
+</li>
+</ul>
+</li>
+<li>
+Global State Sharing
+<ul>
+<li>
+Context can be used directly for sharing global state across components.
+</li>
+</ul>
+</li>
+<li>
+State Management Module
+<ul>
+<li> Alternatively, state management modules like Redux can be employed to handle data indirectly through context.
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+What is React Router?
+<p>
+React Router is like a navigation manager for React applications. 
+It helps build single-page web apps where you can navigate to 
+different sections without refreshing the entire page. This keeps 
+the user experience smooth and also updates the browser URL as 
+you move around.
+
+In React, components are a big deal, and React Router uses this 
+concept. You don't have to use React Router, but it's a popular 
+choice for managing navigation.
+</p>
+<h3>
+Key components of React Router
+</h3>
+<ol>
+<li>
+BrowserRouter
+<ul>
+<li>
+ This is like the boss. It uses the HTML5 history API to keep 
+your app in sync with the URL. It's like the container that holds all the other components.
+</li>
+</ul>
+</li>
+
+<li>
+Routes
+<ul>
+<li>
+This is a newer addition to React (as of version 6). Think of it as an upgraded version of the component that helps with 
+routing.
+</li>
+</ul>
+</li>
+
+<li>
+Route
+<ul>
+<li>
+This is where the action happens. Whenever the URL matches the path you set, this component decides what UI to show. It's like a conditionally displayed part of your app.
+</li>
+</ul>
+</li>
+
+<li>
+Link
+<ul>
+<li>
+Similar to an anchor tag in HTML, this helps create links to different routes, making navigation smooth across your application.
+</li>
+</ul>
+</li>
+</ol>
+<p>
+In simpler terms, React Router is like a guide for your React app, helping you move between different pages or sections without 
+reloading the entire page. It's a way to organize and manage how your app responds to different URLs.
+</p>
+</li>
+<li>
+What are Custom Hooks in React?
+<h3>
+Custom Hooks in React
+</h3>
+<p>
+Custom Hooks in React are reusable functions that encapsulate 
+logic and stateful behavior, allowing you to share that logic across 
+different components. They follow a naming convention starting 
+with "use" (e.g., useCustomHook).
+</p>
+<h3>
+Purpose
+</h3>
+<p>
+Custom Hooks provide a way to extract and manage complex 
+logic outside of components, promoting code reuse and 
+maintaining a clean and modular codebase.
+</p>
+<h3>
+Example
+</h3>
+<p>
+Consider a custom hook for handling form input:
+</p>
+<pre>
+<code>
+// useInput.js
+
+import { useState } from 'react';
+
+
+
+const useInput = (initialValue) => {
+
+ const [value, setValue] = useState(initialValue);
+
+
+
+ const handleChange = (e) => {
+
+ setValue(e.target.value);
+
+ };
+
+
+
+ return {
+
+ value,
+
+ onChange: handleChange,
+
+ };
+
+};
+
+
+
+export default useInput;
+</code>
+</pre>
+<h3>
+Usage in a Component
+</h3>
+<p>
+Now, you can use the useInput custom hook in any 
+component to manage input state:
+</p>
+<pre>
+<code>
+import React from 'react';
+
+import useInput from './useInput';
+
+
+
+const MyComponent = () => {
+
+ const usernameInput = useInput('');
+
+ const passwordInput = useInput('');
+
+
+
+ return (
+
+ <form>
+
+ <label>Username:
+
+ <input type="text" {...usernameInput} />
+
+ </label>
+
+
+
+ <label>Password:
+
+ <input type="password" {...passwordInput} />
+
+ </label>
+
+ </form>
+
+ );
+
+};
+</code>
+</pre>
+<h2>
+Explanation
+</h2>
+<ul>
+<li>
+The useInput hook abstracts away the state management and event handling for input fields.
+</li>
+<li>
+ The component using this custom hook can easily manage multiple input fields without duplicating similar logic.
+</li>
+</ul>
+<h2>
+Benefits of Custom Hooks
+</h2>
+
+<ul>
+<li>
+Reusability: Logic can be reused across different components, 
+promoting a DRY (Don't Repeat Yourself) codebase.
+</li>
+<li>
+Readability: Components become more concise and focused on rendering, with logic abstracted into custom hooks.
+</li>
+<li>
+ Maintainability: Changes to shared logic can be made in one 
+place, affecting all components using the custom hook.
+</li>
+</ul>
+</li>
+
+<li>
+What are higher order components
+
+in React?
+<h2>
+Definition
+</h2>
+<p>
+HOCs in React are functions that take a component and return an enhanced version, leveraging React's compositional nature.
+</p>
+<h3>
+Purity of HOCs
+</h3>
+<p>
+ Often termed "pure components," HOCs accept any child component without altering its behavior.
+</p>
+<h3>
+Usage Pattern
+</h3>
+<p>
+Create an enhanced component using a higher-order function:
+</p>
+<pre>
+<code>
+const EnhancedComponent = 
+higherOrderComponent(WrappedComponent);
+</code>
+</pre>
+<h3>
+Use Cases
+</h3>
+<ul>
+<li>
+Code Reuse and Logic Abstraction
+-> Encapsulate and reuse code, abstracting logic for enhanced components.
+</li>
+<li>
+Render Hijacking 
+-> Customize component rendering by intercepting and modifying the process.
+</li>
+<li>
+State and Props Manipulation
+-> Manage state within HOCs, manipulate or enhance props before passing them down.
+</li>
+</ul>
+<h3>
+Advantages
+</h3>
+<ul>
+<li>
+Modularity and Separation of Concerns
+-> Enhances code organization by separating concerns like 
+state, logic, and rendering.
+</li>
+<li>
+Composability
+-> Compose multiple HOCs for granular and reusable 
+component composition.
+</li>
+<li>
+Encapsulation
+-> Encapsulates specific functionalities, improving code clarity 
+and testability.
+</li>
+</ul>
+</li>
 </ol>
