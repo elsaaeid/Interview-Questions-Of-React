@@ -265,7 +265,7 @@ The Virtual DOM is like a blueprint or a copy of the real DOM that is
 stored in the computer's memory. It's a concept used by React to 
 make updating and changing things on a webpage more efficient.
 </p>
-<img src="./dom.png" />
+<img src="./virtual-dom.png" />
 <ul>
 <li>
 Why is it Needed?
@@ -975,38 +975,25 @@ In the example below, strict mode checks apply to
 <pre>
 <code>
 import React from "react";
-
-
-
+ 
 function ExampleApplication() {
 
  return (
-
  <div>
-
  <Header />
-
  <React.StrictMode>
-
  <div>
-
  <ComponentOne />
-
  <ComponentTwo />
-
  </div>
-
  </React.StrictMode>
-
  <Header />
-
  </div>
-
  );
-
 }
 </code>
 </pre>
+
 </li>
 <li>
 <span>Strict Mode Checks</span>
