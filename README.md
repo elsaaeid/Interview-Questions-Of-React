@@ -980,6 +980,7 @@ function ExampleApplication() {
 
  return (
  <div>
+  
  <Header />
  <React.StrictMode>
  <div>
@@ -988,6 +989,7 @@ function ExampleApplication() {
  </div>
  </React.StrictMode>
  <Header />
+  
  </div>
  );
 }
