@@ -192,7 +192,11 @@ the first parameter and return React elements to display the output.
 </p>
 <ul>
 <li>
-Example of a function component
+ <span>
+  Example of a function component
+ </span>
+
+ 
 <pre>
 <code>
 function Welcome({ personName }) {
@@ -210,12 +214,16 @@ displays a personalized welcome message.
 </ul>
 </li>
 <li>
-Class Components
+ <span>
+  Class Components
+ </span>
+
 <p>
 Alternatively, you can use ES6 classes to define a component. The 
 equivalent class component for the above function component would 
 look like this:
 </p>
+
 <pre>
 <code>
 class Greeting extends React.Component {
@@ -339,6 +347,7 @@ Example
 <ul>
 <li>
 Suppose you have a list of books:
+ 
 <pre>
 <code>
 const books = [
@@ -356,6 +365,7 @@ const books = [
 <li>
 You can use the "key" prop when mapping over this array 
 to render each book:
+ 
 <pre>
 <code>
 const bookItems = books.map((book) => <li 
@@ -440,6 +450,7 @@ Print "Hello World!" Example
 Now, open the file and replace its content with the 
 following:
 </p>
+ 
 <pre>
 <code>
 import React from 'react';
@@ -500,7 +511,11 @@ but are enclosed in curly braces.
 </p>
 <ul>
 <li>
-Single-line comments
+ <span>
+  Single-line comments
+ </span>
+
+ 
 <pre>
 <code>
 <div>
@@ -516,7 +531,11 @@ slash(//)) */}
 </pre>
 </li>
 <li>
-Multi-line comments
+ <span>
+  Multi-line comments
+ </span>
+
+ 
 <pre>
 <code>
 <div>
@@ -550,9 +569,13 @@ Explain how lists are created
 in React?
 <ul>
 <li>
-Lists are essential for displaying dynamic content on a website. In 
+ <p>
+  Lists are essential for displaying dynamic content on a website. In 
 React, you can create a list using the method of an array. Here's 
 an example:
+ 
+ </p>
+
 <pre>
 <code>
 import React from 'react';
@@ -679,7 +702,6 @@ Uses a constructor, especially when state needs to be stored.
 </p>
 </li>
 </ol>
-<p>
 <span>Summary</span>
 <ul>
 <li>
@@ -699,7 +721,6 @@ scenarios, while class components offer more features for
 complex state management and lifecycle methods.
 </li>
 </ul>
-</p>
 </li>
 </ul>
 </li>
@@ -726,6 +747,7 @@ definition of a component's state. Here's an example:
 In a functional component, let's use the useState hook to manage a 
 counter:
 </p>
+ 
 <pre>
 <code>
 import React, { useState } from 'react';
@@ -756,6 +778,7 @@ function Counter() {
 }
 </code>
 </pre>
+
 <p>
 In this updated example, the hook is used to manage 
 the state of a counter. The state variable 'count' is initially set to 
@@ -777,6 +800,7 @@ control over elements in the DOM is required.
 Consider this alternative example where is 
 employed:
 </p>
+
 <pre>
 <code>
 import React, { useState } from 'react';
@@ -947,6 +971,7 @@ helping developers catch potential problems early.
 In the example below, strict mode checks apply to 
 <ComponentOne> <ComponentTwo> and .
 </p>
+ 
 <pre>
 <code>
 import React from "react";
