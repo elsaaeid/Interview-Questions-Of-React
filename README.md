@@ -1010,13 +1010,14 @@ Phases of the Component Lifecycle in React
 The lifecycle of a React component is divided into four phases:
 </h3>
 <ol>
+ 
 <li>
-
 Initialization
 <p>
 In this phase, the React component gets ready by setting up default props and initializing the state.
 </p>
 </li>
+
 <li>
 Mounting
 <p>
@@ -1031,9 +1032,9 @@ This phase includes the following lifecycle methods:
 <li>
  componentDidMount
 </li>
-</lo>
-
+</ol>
 </li>
+
 <li>
 Updating
 <p>
@@ -1053,8 +1054,8 @@ render
 componentDidUpdate
 </li>
 </ol>
-
 </li>
+
 <li>
 Unmounting
 <p>
@@ -1066,6 +1067,7 @@ componentWillUnmount
 </li>
 </ul>
 </li>
+
 </ol>
 <img src="./lCP.png" />
 
