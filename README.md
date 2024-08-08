@@ -776,17 +776,8 @@ They help extract component logic into reusable functions, making your code more
 </ul>
 </li>
 </li>
-
 <li>
 What is Strict Mode in React?
-<ul>
-<li>
-
-</li>
-</ul>
-</li>
-<li>
-What are the features of React?
 <p>
 React.StrictMode is a component designed to highlight potential issues and enforce best practices in a React application. 
 It does not introduce additional DOM elements and operates exclusively in development mode.
