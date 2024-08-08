@@ -70,8 +70,6 @@ const element = React.createElement("div", { id:
 </code>
 </pre>
 </li>
-</ul>
-</li>
 <li>
 This element is essentially an object:
 <pre>
@@ -101,7 +99,6 @@ const element = React.createElement("div", { id:
 </code>
 </pre>
 </li>
-
 </ul>
 </li>
 
@@ -148,7 +145,8 @@ In this example, is a functional component that takes as a prop and returns a JS
 </li>
 </ul>
 </li>
-
+</ul>
+</li>
 
 <li>
 How to create components in React?
