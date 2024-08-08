@@ -11,8 +11,7 @@ The features of React are as follows:
 
 JSX
 
-JSX serves as a syntax extension to JavaScript, facilitating the combination of HTML structures with JavaScript code within React 
-files.
+JSX serves as a syntax extension to JavaScript, facilitating the combination of HTML structures with JavaScript code within React files.
 </li>
 <li>
 
@@ -45,9 +44,7 @@ React's high performance is driven by its ability to update only the components 
 </ul>
 </li>
 <li>
-What is difference between
-
-element and component in React?
+What is difference between element and component in React?
 <ul>
 <li>
 Element
