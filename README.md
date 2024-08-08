@@ -364,6 +364,7 @@ Print "Hello World!" Example
 <p>
 Now, open the file and replace its content with the following:
 </p>
+ 
 <pre>
 <code>
 import React from 'react';
@@ -389,6 +390,7 @@ function App() {
 export default App;
 </code>
 </pre>
+
 </li>
 <li>
 Run the Application
@@ -457,12 +459,11 @@ In these modified examples, the comments now convey a welcoming message to the u
 </li>
 
 <li>
-Explain how lists are created
-
-in React?
+Explain how lists are created in React?
 <ul>
 <li>
 Lists are essential for displaying dynamic content on a website. In React, you can create a list using the method of an array. Here's an example:
+ 
 <pre>
 <code>
 import React from 'react';
@@ -494,6 +495,7 @@ ReactDOM.render(
 );
 </code>
 </pre>
+
 <p>
 In this modified example, we have a list of fruits, and the method is used to create a list of JSX elements ( elements) dynamically. 
 Each fruit is represented as a list item, and the resulting list is rendered inside an unordered list ( ) in the specified HTML element with the ID 'root'. The attribute is added to each element for better performance and React's internal tracking of list items.
@@ -610,6 +612,7 @@ Before Hooks, class components were primarily used for managing state and lifecy
 In functional components, the useState hook enables the definition of a component's state. Here's an example:
 In a functional component, let's use the useState hook to manage a counter:
 </p>
+ 
 <pre>
 <code>
 import React, { useState } from 'react';
@@ -640,6 +643,7 @@ function Counter() {
 }
 </code>
 </pre>
+
 <p>
 In this updated example, the hook is used to manage the state of a counter. The state variable 'count' is initially set to 0, and the updater function 'setCount' is used to increment the count when a button is clicked. The 'count' value is then directly used within the JSX to display the current count.
 </p>
@@ -653,6 +657,7 @@ What is useState() in React?
 The useState() is a fundamental React Hook used to introduce state variables into functional components, especially when dynamic control over elements in the DOM is required.
  Consider this alternative example where is employed:
 </p>
+ 
 <pre>
 <code>
 import React, { useState } from 'react';
@@ -678,14 +683,13 @@ function Greeting() {
 }
 </code>
 </pre>
+
 <p>
 In this example, initialises the state variable message with the value "Hello," and the updater function setMessage allows changing the greeting dynamically. Clicking the button triggers the update, demonstrating the versatility of useState() for managing various state scenarios in React functional components.
 </p>
 </li>
 <li>
-What are the different types of
-
-Hooks in React?
+What are the different types of Hooks in React?
 <ul>
 <li>
 <span>Basic Hooks</span>
@@ -803,9 +807,9 @@ Strict mode checks apply exclusively in development mode, helping developers cat
 <li>
 <span>Example<span>
 <p>
-In the example below, strict mode checks apply to 
-<ComponentOne> <ComponentTwo> and .
+In the example below, strict mode checks apply to <ComponentOne> <ComponentTwo> and .
 </p>
+ 
 <pre>
 <code>
 import React from "react";
@@ -841,6 +845,7 @@ function ExampleApplication() {
 }
 </code>
 </pre>
+
 </li>
 <li>
 <span>Strict Mode Checks</span>
@@ -1000,9 +1005,7 @@ Performance
 </table>
 </li>
 <li>
-What are the different phases of
-
-the component lifecycle?
+What are the different phases of the component lifecycle?
 <h2>
 Phases of the Component Lifecycle in React
 </h2>
@@ -1072,9 +1075,7 @@ componentWillUnmount
 </li>
 
 <li>
-What are the lifecycle methods of
-
-React?
+What are the lifecycle methods of React?
 <p>
 React lifecycle methods are functions automatically called at different phases in a component's lifecycle, offering control over its behavior. 
 Understanding and utilizing these methods empower developers to efficiently manage various aspects throughout the component's existence.
@@ -1335,6 +1336,7 @@ Example
 <p>
 Consider a custom hook for handling form input:
 </p>
+ 
 <pre>
 <code>
 // useInput.js
@@ -1372,12 +1374,14 @@ const useInput = (initialValue) => {
 export default useInput;
 </code>
 </pre>
+
 <h3>
 Usage in a Component
 </h3>
 <p>
 Now, you can use the useInput custom hook in any component to manage input state:
 </p>
+
 <pre>
 <code>
 import React from 'react';
@@ -1419,6 +1423,7 @@ const MyComponent = () => {
 };
 </code>
 </pre>
+
 <h2>
 Explanation
 </h2>
@@ -1448,9 +1453,7 @@ Readability: Components become more concise and focused on rendering, with logic
 </li>
 
 <li>
-What are higher order components
-
-in React?
+What are higher order components in React?
 <h2>
 Definition
 </h2>
