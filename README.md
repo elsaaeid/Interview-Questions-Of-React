@@ -260,9 +260,7 @@ When something changes, React compares the two virtual DOMs to see what's differ
 </ul>
 </li>
 <li>
-What are keys in React and why do
-
-we need them?
+What are keys in React and why do we need them?
 <ul>
 <li>
 <p>
